@@ -1,0 +1,75 @@
+.btm_header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.btm_header .container .input-group {
+  position: relative;
+  width: 30%;
+}
+
+.btm_header .container .input-group input,
+.btm_header .container input,
+.btm_header .container select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  text-align: center;
+  outline: none;
+  background: transparent;
+  color: white;
+}
+
+.fine_weight .container .input-group {
+  width: 90%;
+  margin: 5px 0;
+}
+
+.btm_header .container input,
+.btm_header .container select {
+  width: 30%;
+  transition: 0.3s ease;
+}
+
+.btm_header .container input:hover,
+.btm_header .container select:hover {
+  scale: 1.02;
+  box-shadow: 4px 4px 12px rgb(248, 183, 63);
+}
+
+.btm_header .container select option {
+  color: #000;
+  background-color: transparent;
+}
+
+.btm_header .container .input-group label {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s ease;
+  padding: 0 4px;
+  color: white;
+  background-color: #333;
+}
+
+.btm_header .container .input-group input:focus + label,
+.btm_header .container .input-group input:not(:placeholder-shown) + label {
+  /* أو استخدم :valid بدل placeholder-shown لو عامل required */
+  top: -8px;
+  right: 8px;
+  font-size: 13px;
+  color: white;
+}
+
+
+@media (max-width: 900px) {
+  .btm_header .container input[type="date"] {
+    width: 40%;
+  }
+}

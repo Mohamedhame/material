@@ -1,0 +1,44 @@
+.save-as {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  direction: ltr;
+}
+
+.save-as .title {
+  width: 150px;
+  margin-inline: auto;
+  margin-top: 80px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  font-style: italic;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.save-as .btns {
+  margin-top: 100px;
+  margin-inline: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.save-as .btns button {
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #eea;
+  width: 40%;
+  box-shadow: 4px 6px 12px #eea;
+  transition: 0.3s ease;
+}
+
+.save-as .btns button:hover {
+  scale: 1.1;
+}
